@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016 JustWayward Team
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+<resources>
+    <!--标题栏的颜色-->
+    <color name="colorPrimary">#3B99DF</color>
+    <!--状态栏的颜色-->
+    <color name="colorPrimaryDark">#3B90DF</color>
+    <!--控件的选中颜色，即checked或selected状态的颜色。-->
+    <color name="colorAccent">#3B99DF</color>
+
+    <color name="tip">#88303F9F</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#DE6014</color>
+    <color name="gray">#b8b8b8</color>
+    <color name="green">#5FB236</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="light_white">#EEEEEE</color>
+    <color name="light_black">#515151</color>
+    <color name="light_pink">#fb9090</color>
+    <color name="light_coffee">#A58D5E</color>
+    <color name="light_gray">#AAAAAA</color>
+    <color name="light_red">#EC4A48</color>
+    <color name="light_blue">#039BE5</color>
+    <color name="dark_red">#B93221</color>
+
+    <!--通用背景色-->
+    <color name="common_bg">@color/white</color>
+    <!--通用触摸背景色-->
+    <color name="common_touch_bg">#E3E3E3</color>
+    <!--通用背景色-->
+    <color name="common_gray_bg">#EEEEEE</color>
+    <!--通用一级标题的颜色-->
+    <color name="common_h1">#212121</color>
+    <!--通用二级标题的颜色-->
+    <color name="common_h2">#727272</color>
+    <!--通用三级标题的颜色-->
+    <color name="common_h3">#B2B2B2</color>
+    <!--通用分割线细-->
+    <color name="common_divider_narrow">#E3E3E3</color>
+    <!--通用分割线粗-->
+    <color name="common_divider_wide">@color/light_white</color>
+
+    <color name="reader_menu_bg_color">#191919</color>
+    <color name="read_theme_white">#ffffff</color>
+    <color name="read_theme_green">#bed0cf</color>
+    <color name="read_theme_yellow">#e6dbbf</color>
+    <color name="read_theme_gray">#AAAAAA</color>
+    <color name="read_theme_night">#000000</color>
+
+    <!--章节标题夜间颜色-->
+    <color name="chapter_title_night">#292929</color>
+    <!--章节内容夜间颜色-->
+    <color name="chapter_content_night">#444444</color>
+    <!--章节标题日间颜色-->
+    <color name="chapter_title_day">#837B63</color>
+    <!--章节内容夜间颜色-->
+    <color name="chapter_content_day">#3B3220</color>
+    <!--阅读页顶部字体颜色-->
+    <color name="book_read_top_text">#D1D1D1</color>
+    <!--阅读页底部字体颜色-->
+    <color name="book_read_bottom_text">#e6e6e6</color>
+
+    <!--性别选择颜色值-->
+    <color name="gender_select_male_normal">#B0E2FF</color>
+    <color name="gender_select_male_pressed">#B2DFEE</color>
+    <color name="gender_select_female_normal">#EEA9B8</color>
+    <color name="gender_select_female_pressed">#EEA2AD</color>
+
+    <!--my-->
+    <color name="bg_transparent">#55000000</color>
+
+    <!--IamgeView背景色-->
+    <color name="iv_bg">#00ffffff</color>
+    <!--IamgeView触摸背景色-->
+    <color name="iv_touch_bg">@color/bg_transparent</color>
+
+    <color name="common_shallow_black">#727272</color>
+
+    <color name="transparent_blue">#885CACEE</color>
+
+    <color name="transparent_black">#88000000</color>
+
+    <!--comicHouse-->
+    <color name="bg_binding_line">#ffeaeaea</color>
+    <color name="bg_binding_line_dialog">#ffe0e0e0</color>
+    <color name="bg_blue">#ff3783ef</color>
+    <color name="bg_game_blue">#ff468dfe</color>
+    <color name="bg_game_line">#ffebeef6</color>
+    <color name="bg_game_line_s">#ffe9e9e9</color>
+    <color name="bg_game_line_two">#fff4f4f4</color>
+    <color name="bg_white">#ffffffff</color>
+    <color name="bg_white_s">#fffefefe</color>
+    <color name="browse_trans_black">#cc000000</color>
+    <color name="browse_trans_blue">#cc27abc3</color>
+    <color name="browse_trans_orange">#ccff915e</color>
+    <color name="browse_trans_yellow">#ccffb82d</color>
+    <color name="btn_big_green_deep">#ff17a98c</color>
+    <color name="color_guide_p1">#c0ffb607</color>
+    <color name="color_guide_p2">#c00084ff</color>
+    <color name="color_guide_p3">#c08d58ed</color>
+    <color name="color_launch_bac">#ff0090ff</color>
+    <color name="comm_blue_high">#ff579cf4</color>
+    <color name="comm_blue_mid">#ff2469c1</color>
+    <color name="comm_blue_two">#ff0090ff</color>
+    <color name="comm_gray_high">#ff333333</color>
+    <color name="comm_gray_low">#ff999999</color>
+    <color name="comm_gray_low_bg">#ffcfcfcf</color>
+    <color name="comm_gray_low_small">#fff4f4f4</color>
+    <color name="comm_gray_low_smalls">#ffd9d9d9</color>
+    <color name="comm_gray_lower">#ffcccccc</color>
+    <color name="comm_gray_mid">#ff666666</color>
+    <color name="comm_red_high">#ffff3939</color>
+    <color name="comm_red_mid">#ffcc0606</color>
+    <color name="comm_ui_background">#fff4f4f4</color>
+    <color name="comm_user_line">#ffefefef</color>
+    <color name="comm_yellow_mid">#ffff9921</color>
+    <color name="common_half2_transparent">#a0000000</color>
+    <color name="common_half_transparent">#80000000</color>
+    <color name="common_half_transparent_blue">#80579cf4</color>
+    <color name="default_circle_indicator_fill_color">#ffffffff</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <color name="default_circle_indicator_stroke_color">#ffdddddd</color>
+    <color name="default_line_indicator_selected_color">#ff33b5e5</color>
+    <color name="default_line_indicator_unselected_color">#ffbbbbbb</color>
+    <color name="default_title_indicator_footer_color">#ff33b5e5</color>
+    <color name="default_title_indicator_selected_color">#ffffffff</color>
+    <color name="default_title_indicator_text_color">#bbffffff</color>
+    <color name="default_underline_indicator_selected_color">#ff33b5e5</color>
+    <color name="game_blue">#ff3782fe</color>
+    <color name="header_circle_border">#cccccccc</color>
+    <color name="item_comment_bg">#ffe7f4ff</color>
+    <color name="item_comment_gone_bg">#fff6f6f6</color>
+    <color name="item_comment_gone_text">#ff000000</color>
+    <color name="my_pull_refresh_header_backgroud">@color/comm_gray_low_small</color>
+    <color name="my_pull_refresh_txt_color">@color/comm_gray_high</color>
+    <color name="publish_color_myinteraction">#fffbe288</color>
+    <color name="publish_view0">#ff2775f7</color>
+    <color name="publish_view1">#ff2775f7</color>
+    <color name="publish_view2">#ff2775f7</color>
+    <color name="publish_view3">#ff0096ff</color>
+    <color name="publish_view4">#ff0096ff</color>
+    <color name="publish_view5">#ff42b5ff</color>
+    <color name="publish_view6">#ff42b5ff</color>
+    <color name="publish_view7">#ff42b5ff</color>
+    <color name="publish_view8">#ff58ceff</color>
+    <color name="publish_view9">#ff58ceff</color>
+    <color name="push_comment_bg">#fff9f9f9</color>
+    <color name="recommand_tabbar_txt">#ffd6e4fb</color>
+    <color name="search_random_a">#ff42b5ff</color>
+    <color name="search_random_b">#ff0096ff</color>
+    <color name="search_random_c">#ff2775f7</color>
+    <color name="tab_selected_bg">#ffc4e1e1</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="voice_color_01">#ffef28a2</color>
+    <color name="voice_color_02">#ff975bc7</color>
+    <color name="voice_color_03">#ff2a9af3</color>
+    <color name="vpi__background_holo_dark">#ff000000</color>
+    <color name="vpi__background_holo_light">#fff3f3f3</color>
+    <color name="vpi__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="vpi__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="vpi__bright_foreground_holo_dark">@color/vpi__background_holo_light</color>
+    <color name="vpi__bright_foreground_holo_light">@color/vpi__background_holo_dark</color>
+    <color name="vpi__bright_foreground_inverse_holo_dark">@color/vpi__bright_foreground_holo_light</color>
+    <color name="vpi__bright_foreground_inverse_holo_light">@color/vpi__bright_foreground_holo_dark</color>
+
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yayangyang.lib_common">
+
+    <application>
+        <meta-data
+            android:name="com.guiying.module.common.glide.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <!--公共配置-->
+        <meta-data
+            android:name="com.yayangyang.lib_common.app.GlobalConfiguration"
+            android:value="ConfigModule"/>
+
+    </application>
+
+</manifest>

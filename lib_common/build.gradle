@@ -1,0 +1,95 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion build_versions.target_sdk
+    defaultConfig {
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            zipAlignEnabled false
+            shrinkResources false
+            minifyEnabled false
+            //debuggable true//自己注释
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Support libraries
+    implementation deps.support.app_compat
+    implementation deps.constraint_layout
+    api deps.support.design
+    api deps.support.recyclerview
+    api deps.support.cardview
+    api deps.support.recyclerview
+    api deps.constraint_layout
+
+    //Retrofit
+    api deps.retrofit.runtime
+    api deps.retrofit.adapter
+    api deps.retrofit.gson
+    //RxJava
+    api deps.rx_android
+    api deps.rxjava2
+    // Bus
+    api deps.eventbus
+    //butterknife
+    api deps.butterknife
+    //Dagger
+    api deps.dagger.runtime
+    //BaseRecyclerViewAdapterHelper
+    api deps.brvah
+    //banner
+    api deps.banner
+    //popupwindow封装库
+    api deps.popupwindow
+    //glide
+    implementation deps.glide
+    //glide-transformations
+    api deps.glide_transformations
+    //内存泄漏检测工具
+    debugImplementation deps.leakcanary
+    releaseImplementation deps.leakcanary_android_no_op
+    //compressor压缩
+    api deps.compressor
+    //有标签效果的FlowLayout
+    api deps.flowlayout
+    //多线程断点续传下载库
+    api deps.rxdownload3
+    // TinyPinyin核心包，约80KB
+    api deps.tinypinyin
+    //动态更改Retrofit的BaseUrl
+    api deps.retrofit_url_manager
+    //内存泄漏检测工具
+    debugImplementation deps.leakcanary
+    releaseImplementation  deps.leakcanary_android_no_op
+    //multidex
+    implementation deps.support.multidex
+
+    //router
+    api deps.arouter_api
+
+    //annotationProcessor
+//    annotationProcessor deps.dagger.android_support_compiler
+    annotationProcessor deps.dagger.compiler
+    annotationProcessor deps.glide_compiler
+
+}
