@@ -4,6 +4,7 @@ import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.request.RequestOptions;
 
 import jp.wasabeef.glide.transformations.BitmapTransformation;
+import jp.wasabeef.glide.transformations.MaskTransformation;
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 /**
@@ -12,16 +13,35 @@ import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class GlideUtil {
 
-    private static BitmapTransformation sRoundBitmapTransformation;
+    private static BitmapTransformation sRoundCommonBitmapTransformation;
+    private static BitmapTransformation sRoundTopBitmapTransformation;
+    private static BitmapTransformation sRoundBottomBitmapTransformation;
+
     private static RequestOptions sDefaultRequestOptions;
     private static RequestOptions sRoundCornerRequestOptions;
     private static RequestOptions sCircleCornerRequestOptions;
 
-    public static BitmapTransformation getCommonTransformation(){
-        if(sRoundBitmapTransformation==null){
-            sRoundBitmapTransformation = new RoundedCornersTransformation(ScreenUtils.dpToPxInt(6), 0);
+    public static BitmapTransformation getRoundCommonTransformation(){
+        if(sRoundCommonBitmapTransformation==null){
+            sRoundCommonBitmapTransformation = new RoundedCornersTransformation(ScreenUtils.dpToPxInt(8), 0);
         }
-        return sRoundBitmapTransformation;
+        return sRoundCommonBitmapTransformation;
+    }
+
+    public static BitmapTransformation getRoundTopTransformation(){
+        if(sRoundTopBitmapTransformation==null){
+            sRoundTopBitmapTransformation = new RoundedCornersTransformation(ScreenUtils.dpToPxInt(6), 0,
+                    RoundedCornersTransformation.CornerType.TOP);
+        }
+        return sRoundTopBitmapTransformation;
+    }
+
+    public static BitmapTransformation getRoundBottomTransformation(){
+        if(sRoundBottomBitmapTransformation==null){
+            sRoundBottomBitmapTransformation = new RoundedCornersTransformation(ScreenUtils.dpToPxInt(6), 0,
+                    RoundedCornersTransformation.CornerType.BOTTOM);
+        }
+        return sRoundBottomBitmapTransformation;
     }
 
     public static RequestOptions getDefaultRequestOptions(){
@@ -39,7 +59,7 @@ public class GlideUtil {
             sRoundCornerRequestOptions = new RequestOptions()
                     .format(DecodeFormat.PREFER_RGB_565)
 //                    .disallowHardwareConfig()
-                    .transform(GlideUtil.getCommonTransformation())
+                    .transform(GlideUtil.getRoundCommonTransformation())
                     .skipMemoryCache(true);
         }
         return sRoundCornerRequestOptions;

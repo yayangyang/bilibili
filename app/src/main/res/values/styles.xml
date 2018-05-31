@@ -146,14 +146,16 @@
     <!--******************************************************************************-->
 
     <style name="Bottom_Tab_Style">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@android:color/transparent</item>
         <item name="android:button">@null</item>
-        <item name="android:drawablePadding">3dp</item>
-        <item name="android:padding">5dp</item>
+        <item name="android:drawablePadding">@dimen/dp_3</item>
+        <item name="android:paddingTop">@dimen/dp_8</item>
+        <item name="android:paddingBottom">@dimen/dp_8</item>
         <item name="android:layout_weight">1</item>
-        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/light_pink</item>
+        <item name="android:textSize">@dimen/dp_10</item>
         <item name="android:gravity">center</item>
     </style>
 
@@ -163,6 +165,13 @@
         <item name="android:ellipsize">end</item>
         <item name="android:maxLines">1</item>
         <item name="android:maxEms">9</item>
+    </style>
+
+    <style name="cl_center_vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
     </style>
 
 </resources>

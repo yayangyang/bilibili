@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_160"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bili_default_card_background">
+
+    <FrameLayout
+        android:id="@+id/fr_normal"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_100"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/iv_touch_bg_selector"
+        android:background="@drawable/shape_common_place_holder_bg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/common_tv"
+        android:maxEms="7"
+        tools:text="辣骨蜀黍"
+        tools:textColor="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintBottom_toBottomOf="@id/fr_normal"
+        app:layout_constraintLeft_toLeftOf="@id/fr_normal"
+        android:paddingBottom="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_8"/>
+
+    <TextView
+        android:id="@+id/tv_people_count"
+        style="@style/common_tv"
+        android:maxEms="2"
+        tools:text="1.6万"
+        tools:textColor="@android:color/black"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintBottom_toBottomOf="@id/fr_normal"
+        app:layout_constraintRight_toRightOf="@id/fr_normal"
+        android:layout_marginRight="@dimen/dp_6"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="六阶老屠夫的日常~"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_normal_s"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintRight_toRightOf="@id/fr_normal"
+        app:layout_constraintTop_toBottomOf="@id/fr_normal"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/common_tv"
+        android:maxEms="8"
+        tools:text="第五人格"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintLeft_toLeftOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/dp_4"/>
+
+    <ImageView
+        android:id="@+id/iv_small_play"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:src="@drawable/ic_live_player_overflow_vertical"
+        android:textColor="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="@id/tv_people_count"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/dp_4"/>
+
+</android.support.constraint.ConstraintLayout>

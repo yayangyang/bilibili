@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        style="@style/cl_center_vertical"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/ic_live_home_game"
+        android:background="@color/light_pink"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_13"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/cl_center_vertical"
+        android:text="小时榜"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_big"
+        app:layout_constraintLeft_toRightOf="@id/iv_cover"
+        android:layout_marginLeft="@dimen/dp_3"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        style="@style/cl_center_vertical"
+        android:text="8:00-9:00榜单"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_size_normal_s"
+        app:layout_constraintLeft_toRightOf="@id/tv_title"
+        android:layout_marginLeft="@dimen/dp_6"/>
+
+    <TextView
+        android:id="@+id/tv_more"
+        style="@style/cl_center_vertical"
+        android:text="换一换"
+        android:textSize="@dimen/text_size_normal_s"
+        android:drawableRight="@drawable/ic_live_home_refresh"
+        android:drawablePadding="@dimen/dp_6"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/dp_8"/>
+
+</android.support.constraint.ConstraintLayout>

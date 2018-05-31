@@ -3,26 +3,43 @@ package com.yayangyang.bilibili.Bean;
 
 import com.yayangyang.bilibili.Bean.base.Base;
 
-/**
- * Created by Administrator on 2018/3/8.
- */
-
 public class BannerBean extends Base {
 
-    public String cover;
-    public String title;
-    public String sub_title;
-    public String type;//版块类型
-    public String url;//无
-    public String obj_id;//无
-    public String status;
+    private String id;
+    private String link;
+    private String pic;
+    private String title;
 
-    public String uid;//便于订阅版块的类实例转化为此类的对象
+    public String getId() {
+        return id;
+    }
 
-    public String num;//便于喜欢版块的类实例转化为此类的对象
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    public String id;//便于订阅与喜欢版块的类实例转化为此类的对象
+    public String getLink() {
+        return link;
+    }
 
-    public String object_url;//后缀为html
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getPic() {
+        return pic;
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
 }

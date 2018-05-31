@@ -26,7 +26,18 @@ public final class GlobalConfiguration implements ConfigModule {
 
     @Override
     public void applyOptions(Context context, GlobalConfigModule.Builder builder) {
+        builder.baseurl(Constant.API_BASE_URL)
+                .okhttpConfiguration((context1, okhttpBuilder) -> {//这里可以自己自定义配置Okhttp的参数
+//                    okhttpBuilder.sslSocketFactory(); //支持 Https,详情请百度
+//                    ProgressManager.getInstance().with(okhttpBuilder);
+                    RetrofitUrlManager.getInstance().with(okhttpBuilder);
+                })
+                .retrofitConfiguration(new ClientModule.RetrofitConfiguration() {
+                    @Override
+                    public void configRetrofit(Context context, Retrofit.Builder builder) {
 
+                    }
+                });
     }
 
     @Override

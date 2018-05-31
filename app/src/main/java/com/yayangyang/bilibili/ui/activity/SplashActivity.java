@@ -62,12 +62,13 @@ public class SplashActivity extends BasePermissionActivity {
 //        setupActivityComponent(BilibiliApplication.getsInstance().getAppComponent());
 //        mPresenter.attachView(this);
 
-        if (SettingManager.getInstance().isFirstEnter()) {
-            init();
-            requeset();
-        } else {
-            goHome();
-        }
+        goHome();
+//        if (SettingManager.getInstance().isFirstEnter()) {
+//            init();
+//            requeset();
+//        } else {
+//            goHome();
+//        }
     }
 
     private void init() {

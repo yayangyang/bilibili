@@ -23,30 +23,12 @@ import java.util.concurrent.TimeUnit;
 import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 import retrofit2.Retrofit;
 
-/**
- * App 的全局配置信息在此配置, 需要将此实现类声明到 AndroidManifest 中
- * ConfigModule 的实现类可以有无数多个, 在 Application 中只是注册回调, 并不会影响性能 (多个 ConfigModule 在多 Module 环境下尤为受用)
- * 不过要注意 ConfigModule 接口的实现类对象是通过反射生成的, 这里会有些性能损耗
- */
 public final class GlobalConfiguration implements ConfigModule {
 
     @Override
     public void applyOptions(Context context, GlobalConfigModule.Builder builder) {
 
-        builder.baseurl(Constant.API_BASE_URL)
-                .okhttpConfiguration((context1, okhttpBuilder) -> {//这里可以自己自定义配置Okhttp的参数
-//                    okhttpBuilder.sslSocketFactory(); //支持 Https,详情请百度
-//                    ProgressManager.getInstance().with(okhttpBuilder);
-                    //让 Retrofit 同时支持多个 BaseUrl 以及动态改变 BaseUrl. 详细使用请方法查看 https://github.com/JessYanCoding/RetrofitUrlManager
-                    RetrofitUrlManager.getInstance().with(okhttpBuilder);
-                })
-                .retrofitConfiguration(new ClientModule.RetrofitConfiguration() {
-                    @Override
-                    public void configRetrofit(Context context, Retrofit.Builder builder) {
-
-                    }
-                })
-                .addInterceptor(new BaseInterceptor())
+        builder.addInterceptor(new BaseInterceptor())
                 .addInterceptor(new HeaderInterceptor())
                 .addNetWorkInterceptor(new RewriteCacheControlInterceptor());
     }

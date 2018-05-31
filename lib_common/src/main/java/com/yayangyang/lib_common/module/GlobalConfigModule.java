@@ -4,11 +4,13 @@ import android.app.Application;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.Glide;
 import com.yayangyang.lib_common.base.Constant;
+import com.yayangyang.lib_common.utils.LogUtils;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -108,6 +110,7 @@ public class GlobalConfigModule {
         }
 
         public Builder addNetWorkInterceptor(Interceptor netWorkInterceptor) {
+            LogUtils.e("添加了");
             if (netWorkInterceptors == null)
                 netWorkInterceptors = new ArrayList<>();
             this.netWorkInterceptors.add(netWorkInterceptor);

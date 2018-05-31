@@ -21,7 +21,7 @@ public class Constant {
 
     public static final String IMG_BASE_URL = "http://images.dmzj.com";
 
-    public static final String API_BASE_URL = "http://v2.api.dmzj.com";
+    public static final String API_BASE_URL = "https://api.live.bilibili.com";
 
     public static final String PATH_DOWNLOAD = Environment.getExternalStorageDirectory().getAbsolutePath()+"/Download";
 

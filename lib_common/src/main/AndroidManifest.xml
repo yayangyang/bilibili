@@ -3,9 +3,6 @@
     package="com.yayangyang.lib_common">
 
     <application>
-        <meta-data
-            android:name="com.guiying.module.common.glide.OkHttpGlideModule"
-            android:value="GlideModule" />
 
         <!--公共配置-->
         <meta-data

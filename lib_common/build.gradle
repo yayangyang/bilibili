@@ -35,7 +35,7 @@ dependencies {
 
     // Support libraries
     implementation deps.support.app_compat
-    implementation deps.constraint_layout
+//    implementation deps.constraint_layout
     api deps.support.design
     api deps.support.recyclerview
     api deps.support.cardview
@@ -62,7 +62,7 @@ dependencies {
     //popupwindow封装库
     api deps.popupwindow
     //glide
-    implementation deps.glide
+    api deps.glide
     //glide-transformations
     api deps.glide_transformations
     //内存泄漏检测工具

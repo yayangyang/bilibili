@@ -20,33 +20,34 @@
         android:orientation="horizontal" >
 
         <RadioButton
-            android:id="@+id/comic"
+            android:id="@+id/home"
             style="@style/Bottom_Tab_Style"
-            android:drawableTop="@drawable/tab_home_selector"
-            android:checked="true"
+            android:text="首页"
             android:textColor="@color/tv_common_selector"
-            android:text="漫画" />
+            android:drawableTop="@drawable/tab_home_selector"
+            android:background="@drawable/touch_bg_pressed_selector"
+            android:checked="true" />
 
         <RadioButton
-            android:id="@+id/news"
+            android:id="@+id/zone"
             style="@style/Bottom_Tab_Style"
             android:drawableTop="@drawable/tab_news_selector"
             android:textColor="@color/tv_common_selector"
-            android:text="新闻" />
+            android:text="分区" />
 
         <RadioButton
-            android:id="@+id/light_novel"
+            android:id="@+id/dynamic"
             style="@style/Bottom_Tab_Style"
             android:drawableTop="@drawable/tab_smart_selector"
             android:textColor="@color/tv_common_selector"
-            android:text="轻小说" />
+            android:text="动态" />
 
         <RadioButton
-            android:id="@+id/mine"
+            android:id="@+id/vip_purchase"
             style="@style/Bottom_Tab_Style"
             android:drawableTop="@drawable/tab_gov_selector"
             android:textColor="@color/tv_common_selector"
-            android:text="我的" />
+            android:text="会员购" />
 
     </RadioGroup>
 
